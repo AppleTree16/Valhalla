@@ -40,9 +40,9 @@ def start(message):
     user_id = str(message.from_user.id)
     if user_id in allowed_users:
         add_user_to_data(user_id)
-        bot.reply_to(message, 'اهلا بك في بوت الرفع الخارجي المطورين @KK8KC, شرح البوت تابعه قبل لا تبدي @Py_Val', reply_markup=keyboard)
+        bot.reply_to(message, 'اهلا بك في بوت الرفع الخارجي ', reply_markup=keyboard)
     else:
-        bot.reply_to(message, 'انت غير مشترك في البوت للاشتراك في البوت : @KK8KC')
+        bot.reply_to(message, 'انت غير مشترك في البوت')
 
 
 
@@ -310,10 +310,10 @@ def clear_all_info(message, user_id):
 
 
 
-allowed_users = ['1020311286']
+allowed_users = ['']
 
 
-allowed_add_user_users = ['1020311286']
+allowed_add_user_users = ['']
 
 
 def add_user_to_allowed_users(user_id):
@@ -347,9 +347,9 @@ def add_user_command(message):
 
 
 
-allowed_users = ['1020311286']
+allowed_users = ['']
 
-allowed_remove_user_users = ['1020311286']
+allowed_remove_user_users = ['']
 
 def remove_user_from_allowed_users(user_id):
     if user_id in allowed_users:
